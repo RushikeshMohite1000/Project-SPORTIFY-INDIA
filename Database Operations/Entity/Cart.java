@@ -26,15 +26,16 @@ public class Cart
 	@Column(name = "cart_status")
 	private String cartStatus;
 	
+
 	@ManyToOne(targetEntity = Customer.class )
 	private Customer customer; 
 	
 	@OneToMany(targetEntity = CartItem.class ,cascade = CascadeType.ALL)
 	private Set<CartItem> cartItems;
-	//private Customer customer; 
+	
 	
 	public Cart() {
-		// TODO Auto-generated constructor stub
+		
 	}
 }
 
