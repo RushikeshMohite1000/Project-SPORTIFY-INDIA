@@ -1,0 +1,37 @@
+
+C:\Users\Admin>mysqldump --host=localhost --user=root --port=3306 --password=root sportify > G:\1CDAC_Lecture\CDAC_Project\Project_Documents\sportifydb.sql
+
+mysql>source G:/1CDAC_Lecture/CDAC_Project/Other/sportifydb.sql
+
+
+mysql>select * from product_table where product_discount >=20;
+
+
+mysql> select * from product_table where product_id in (select  product_product_id from cart_item_table where cart_cart_id in (select cart_id from cart_table where customer_customer_id=5));
+
+mysql> select * from order_table where  customer_customer_id=6;
+
+
+
+mysql> update order_table set order_status='deliverd' where customer_customer_id=6 and product_product_id=14;
+
+mysql> select sum(order_total_cost) from order_table where month(order_date)=02;
+
+
+mysql> select * from product_table inner join seller_info_table on   product_table.seller_seller_id=seller_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

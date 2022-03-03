@@ -1,0 +1,77 @@
+
+
+
+===========================================================================
+1------------------
+insert into  customer_info_table values (default,'shanti nagar','Pune','rahul@gmail.com','9988776655','Rahul Kumar','rahul123','425200','rahul'),
+(default,'Aadarsh Colony','Pune','sahil123@gmail.com','8812546141','Sahil wani','wanis44','425410','sahil'),
+(default,'JK Road shiv Colony','Pune','maheshw@gmail.com','7846412541','Mahesh Wadile','mahiwa87','425411','mahesh'),
+(default,'Samata Nagar','Pune','pradip44@gmail.com','8745451121','Pradip Surywanshi','pradipsurya4','425611','pradip');
+
+
+
+2------------------------------
+insert into  seller_info_table values(default,'anand nagar','121234344444','Jalgaon','ram@gmail.com','22AAAAA00000A1Z5','8989898989','Ram Patil','ram123',load_file('ram.jpg'),'Shakti Sports','ram'),
+(default,'Ring Road','354874484830','Pune','nilesh@gmail.com','47911801ar154079kla','9547894311','Nilesh Rajput','nilu794',load_file('nilesh.jpg'),'nil sport shop','niluraj'),
+(default,'FC road','247874487346','Pune','jagan@gmail.com','74651801ar154120sds','9612145781','Jagan Bhosale','jagan001',load_file('jagan.jpg'),'jagan sports','jaganb'), 
+(default,'jail road','45787421234641','Nashik','vishalp@gmail.com','45251857bh154120sds','7425642242','Vishal Parul','vishu4744',load_file('vishu.jpg'),'Vishu sport zone','vishu');
+
+
+
+3------------------------------
+insert into  cart_table values (default,'empty',1) ,(default,'empty',2),(default,'empty',3) ,(default,'empty',4);
+
+
+4-------------------------
+insert into category_table values (default,load_file('D:\cricket\crick.jpg'),'cricket'),(default,load_file('D:\football\ball.jpg'),'Football'),
+(default,load_file('D:\tennis\tennis.jpg'),'tennis'),(default,load_file('D:\Hocky\Hocky.jpg'),'Hocky');
+
+
+5-------------------------------
+insert into product_table values (default,'MRF200 Rubber Grip',10,'Cricket Bat',1200,20,1,1),
+(default,'covered with leather',20,'FootBall',1000,30,2,2),
+(default,' size 27 inches',25,'tennis racket',1500,10,3,3),
+(default,'hocky stick length 89cm',5,'Hockey Sticks',2000,40,4,4);
+
+
+
+
+6---------------------------------------
+insert into sub_category_table values (default,'equipment',1), (default,'Sport Sheos',2), (default,'equipment',3), (default,'equipment',4);
+
+
+7----------------------------------------------------------
+insert into  cart_item_table values (default,1,1),(default,1,2),(default,1,3),(default,1,4);
+
+
+8-------------------------------------------------------------------------
+insert into  deliveryboy_info_table values (default,'adarsh nagar',"154875212114",'ganesg@gmail.com',null,'YES',"1248897424",'Ganesh gore','Two Wheeler','pune','gg123','ganesh'),
+(default,'samta nagar',"794575211547",'sagar@gmail.com',null,'YES',"8857489741",'Sagar Bamare','Two Wheeler','pune','sagar741','sagar'),
+(default,'shivaji nagar',"414514871547",'kunalpo@gmail.com',null,'YES',"9157489741",'kunal podar','Two Wheeler','pune','kunalpo74','kunal'),
+(default,'wagh nagar',"122640752072",'rohitm@gmail.com',null,'YES',"8857489741",'rohit mehera','Two Wheeler','pune','rohit33','rohitjadu');
+
+
+
+9-----------------------------------------------------------
+insert into order_table values (default,'pune','2022-02-27','cricket bat mrf200cm','cash On Delievry',5,'shanti nagar','ordered',6000,1,1,1),
+(default,'pune','2022-02-25','covered with leather','cash On Delievry',4,'sunflower society','ordered',5500,2,1,2),
+(default,'pune','2022-02-24',' size 27 inches','cash On Delievry',5,'jijau nagar','ordered',5000,3,2,3),
+(default,'pune','2022-02-20','hocky stick length 89cm','debit card',5,'ekta nagar','ordered',6500,4,4,3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
