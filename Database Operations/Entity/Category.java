@@ -1,4 +1,4 @@
-package study.Entity;
+package study.entity;
 
 import java.sql.Blob;
 import java.util.Set;
@@ -32,9 +32,46 @@ public class Category {
 	
 	@OneToMany(targetEntity = Subcategory.class ,cascade = CascadeType.ALL)
 	private Set<Subcategory> subcategories;
-	
-	
-	public Category() {
-		// TODO Auto-generated constructor stub
+
+	public int getCategoryId() {
+		return categoryId;
 	}
+
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
+	}
+
+	public String getCatrgoryName() {
+		return catrgoryName;
+	}
+
+	public void setCatrgoryName(String catrgoryName) {
+		this.catrgoryName = catrgoryName;
+	}
+
+	public Blob getCategoryImage() {
+		return categoryImage;
+	}
+
+	public void setCategoryImage(Blob categoryImage) {
+		this.categoryImage = categoryImage;
+	}
+
+	public Set<Product> getProducts() {
+		return products;
+	}
+
+	public void setProducts(Set<Product> products) {
+		this.products = products;
+	}
+
+	public Set<Subcategory> getSubcategories() {
+		return subcategories;
+	}
+
+	public void setSubcategories(Set<Subcategory> subcategories) {
+		this.subcategories = subcategories;
+	}
+	
+	
 }

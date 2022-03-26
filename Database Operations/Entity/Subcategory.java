@@ -1,4 +1,4 @@
-package study.Entity;
+package study.entity;
 
 
 import javax.persistence.Column;
@@ -23,9 +23,31 @@ public class Subcategory {
 	
 	@ManyToOne(targetEntity = Category.class )
 	private Category category;
-	
-	
-	public Subcategory() {
-		// TODO Auto-generated constructor stub
+
+	public int getSubCategoryId() {
+		return subCategoryId;
 	}
+
+	public void setSubCategoryId(int subCategoryId) {
+		this.subCategoryId = subCategoryId;
+	}
+
+	public String getSubCatrgoryName() {
+		return subCatrgoryName;
+	}
+
+	public void setSubCatrgoryName(String subCatrgoryName) {
+		this.subCatrgoryName = subCatrgoryName;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+	
+
+	
 }

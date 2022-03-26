@@ -1,4 +1,4 @@
-package study.Entity;
+package study.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,9 +22,30 @@ public class CartItem {
 	
 	@ManyToOne(targetEntity = Product.class )
 	private Product product;
-	
-	
-	public CartItem() {
-	
+
+	public int getCartId() {
+		return cartId;
 	}
+
+	public void setCartId(int cartId) {
+		this.cartId = cartId;
+	}
+
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	
 }

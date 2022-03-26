@@ -1,4 +1,4 @@
-package study.Entity;
+package study.entity;
 
 
 import java.util.Set;
@@ -15,8 +15,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "cart_table")
-public class Cart 
-{
+public class Cart {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,18 +25,43 @@ public class Cart
 	@Column(name = "cart_status")
 	private String cartStatus;
 	
-
 	@ManyToOne(targetEntity = Customer.class )
 	private Customer customer; 
 	
 	@OneToMany(targetEntity = CartItem.class ,cascade = CascadeType.ALL)
 	private Set<CartItem> cartItems;
-	
-	
-	public Cart() {
-		
+
+	public int getCartId() {
+		return cartId;
 	}
+
+	public void setCartId(int cartId) {
+		this.cartId = cartId;
+	}
+
+	public String getCartStatus() {
+		return cartStatus;
+	}
+
+	public void setCartStatus(String cartStatus) {
+		this.cartStatus = cartStatus;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public Set<CartItem> getCartItems() {
+		return cartItems;
+	}
+
+	public void setCartItems(Set<CartItem> cartItems) {
+		this.cartItems = cartItems;
+	}
+	
+	
 }
-
-
-

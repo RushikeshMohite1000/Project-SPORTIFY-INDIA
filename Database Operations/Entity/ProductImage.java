@@ -1,4 +1,4 @@
-package study.Entity;
+package study.entity;
 
 import java.sql.Blob;
 
@@ -8,7 +8,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -21,19 +20,38 @@ public class ProductImage
 	@Column(name = "product_Image_id")
 	private int prodImageId;
 
-	//@OneToMany(targetEntity = Product.class)
-	//private Product product;
-	
+
 	@Column(name = "product_Image_image")
 	private Blob  prodImageImage;
 	
 	@ManyToOne(targetEntity = Product.class )
 	private Product product;
 
-	public ProductImage() 
-	{
-		// TODO Auto-generated constructor stub
+	public int getProdImageId() {
+		return prodImageId;
 	}
+
+	public void setProdImageId(int prodImageId) {
+		this.prodImageId = prodImageId;
+	}
+
+	public Blob getProdImageImage() {
+		return prodImageImage;
+	}
+
+	public void setProdImageImage(Blob prodImageImage) {
+		this.prodImageImage = prodImageImage;
+	}
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	
 
 	
 	
