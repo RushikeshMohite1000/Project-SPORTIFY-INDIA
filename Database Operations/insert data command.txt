@@ -23,8 +23,7 @@ insert into  cart_table values (default,'empty',1) ,(default,'empty',2),(default
 
 
 4-------------------------
-insert into category_table values (default,load_file('D:\cricket\crick.jpg'),'cricket'),(default,load_file('D:\football\ball.jpg'),'Football'),
-(default,load_file('D:\tennis\tennis.jpg'),'tennis'),(default,load_file('D:\Hocky\Hocky.jpg'),'Hocky');
+insert into category_table values (default,'img/cat-3.jpg','tennis'),insert into category_table values (default,'img/cat-1.jpg','cricket')
 
 
 5-------------------------------

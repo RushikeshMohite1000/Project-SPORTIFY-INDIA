@@ -1,0 +1,11 @@
+package com.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.repository.CustomerRepository;
+
+public class CustomerDao {
+	
+		@Autowired
+		CustomerRepository repo;
+}
