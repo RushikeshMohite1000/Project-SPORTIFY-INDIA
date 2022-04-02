@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+C:\Users\Rushikesh\Desktop\SportfyIndiaSpringBoot\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-4066750154.index
-186129468.index
-4135386175.index
-2486278700.index
-1086076758.index
-646431599.index
-3831713349.index

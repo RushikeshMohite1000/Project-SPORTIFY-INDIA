@@ -1,5 +1,0 @@
-INDEX VERSION 1.131
-C:\Users\Rushikesh\Desktop\SportfyIndiaSpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\186129468.index
-\SportifyIndia\src\main\java
-C:\Users\Rushikesh\Desktop\SportfyIndiaSpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1806120934.index
-\SportifyIndia\src\main\java

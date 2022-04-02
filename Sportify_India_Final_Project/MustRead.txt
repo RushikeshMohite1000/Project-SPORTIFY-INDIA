@@ -1,0 +1,22 @@
+Step 1:
+
+	Run The Application
+
+Step 2:
+
+	Fire Querrys In Mysql
+	
+		1.insert into category_table values(default,"img/cat-1.jpg",'Cricket'),(default,"img/cat-2.jpg",'Football'),(default,"img/cat-3.jpg",'Tennis');
+		
+		2.insert into admin_table values(default,'pune','p@gmail.com','8974230159','pranav','12345','joshi');
+		
+Step 4:
+		Update The Upload Directory Path in Seller And Product Controller as your Project
+		
+		uploaddir="Your Workspace relative path\\SportifyIndia\\src\\main\\resources\\static\\img"
+		
+Step 5:	
+		
+		http://localhost:8080/index Open In Browser
+		
+		

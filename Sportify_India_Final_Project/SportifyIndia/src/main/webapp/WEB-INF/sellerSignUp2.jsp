@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sports</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+     <!-- Topbar Start -->
+     <div class="container-fluid">
+        <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+            <div class="col-lg-4">
+                <a href="" class="text-decoration-none">
+                    <span class="h1 text-uppercase text-primary bg-dark px-2">Sportify</span>
+                    <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">India</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark mb-30">
+        <div class="row px-xl-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
+                     <a href="" class="text-decoration-none d-block d-lg-none">  <!-- For Responsive Name -->
+                         <span class="h1 text-uppercase text-dark bg-light px-2">Sportify</span>
+                        <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1">India</span>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a  class="nav-item nav-link active">Profile</a>
+                            <a  class="nav-item nav-link">Products</a>
+                            <!--<a href="detail.html" class="nav-item nav-link">Shop Detail</a>-->
+                            <a  class="nav-item nav-link">Orders</a>
+                            <!-- <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class='far fa-user-circle' style="font-size: 24px;"></i></a>
+                                    <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                        <a href="" class="dropdown-item">Sign In</a>
+                                        <a href="" class="dropdown-item">Sign Up</a>
+                                    </div>
+                                </div>
+                            </div>                             -->
+                        </div>
+                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block" style="padding-left: 1060px;">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class='far fa-user-circle' style="font-size: 20px;"></i></a>
+                                <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                    <a  class="dropdown-item">Sign Out</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
+                            <!-- <a href="" class="btn px-0">
+                                <i class="fas fa-heart text-primary"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="index.jsp">Home</a>
+                    <a class="breadcrumb-item text-dark" href="Sellerlanding.jsp">Seller</a>
+                    <span class="breadcrumb-item active">Register</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+     <!-- Sign Up Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-md-10">
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Personal Details</span></h5>
+                <form action="/sellersignup" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="name">Your Full Name <i style="color: red;">*</i></label>
+                            <input id="name" name="name"class="form-control" required placeholder="Your Full Name">
+                        </div>
+                        <div class="form-group col">
+                            <label for="email">Email <i style="color: red;">*</i></label>
+                            <input type="text" name="email" class="form-control" required placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="mobno">Mobile No <i style="color: red;">*</i></label>
+                            <input id="mobno" name="mobno" class="form-control" required pattern="[0-9]{10}" placeholder="Mobile No">
+                        </div>
+                        <div class="form-group col">
+                            <label for="username">User Name<i style="color: red;">*</i></label>
+                            <input id="username" name="uname" class="form-control" required placeholder="User Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="password">Password<i style="color: red;">*</i></label>
+                            <input id="password" name="password" type="password" class="form-control" required placeholder="Password">
+                        </div>
+                        <div class="form-group col">
+                            <label for="adress">Adress<i style="color: red;">*</i></label>
+                            <textarea type="" name="address" id="adress" class="form-control" required placeholder="Adress"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="city">City<i style="color: red;">*</i></label>
+                            <input id="city" name="city" class="form-control" required placeholder="City">
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="Image">Image<i style="color: red;">*</i></label>
+                            <input type="file" name="image" id="Image" class="form-image" accept="image/jpeg, image/jpg" required style="margin-left:10px;margin-top: 20px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="Shop Name">Shop Name<i style="color: red;">*</i></label>
+                            <input id="Shop Name" name="shopname" class="form-control" required placeholder="Shop Name">
+                        </div>
+                        <div class="form-group col">
+                            <label for="gst">GST No<i style="color: red;">*</i>
+                            <input name="gst" type="tel"  pattern="[0-9]{2}" placeholder="##" aria-label="3-digit area code" size="2" style="margin-top: 20px;"/> -
+                            <input name="gst" type="tel"  pattern="[A-Z]{9}" placeholder="#########" aria-label="3-digit prefix" size="9"/> -
+                            <input name="gst" type="tel"  pattern="[0-9]{5}" placeholder="#####" aria-label="4-digit number" size="3"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="Adhar Card No">Adhar Card No<i style="color: red;">*</i></label>
+                            <input id="Adhar Card No" name="adhar"class="form-control" required placeholder="Adhar Card No">
+                        </div>
+                        <div class="form-group col">
+                        </div>
+                    </div>
+                    <div class="form-group mb-0">
+                        <input type="submit" value="Register" class="btn btn-primary px-3" style="margin-right: 10px;">
+                        <a href="" class="btn btn-primary">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     <!-- Sign Up End -->
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark text-secondary mt-5 pt-5"><!--<center> -->
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">More</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">ADMINISTRATION</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="http://localhost:3000"><i class="fa fa-angle-right mr-2"></i>ADMIN</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">Be Seller</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="/sellerlanding"><i class="fa fa-angle-right mr-2"></i>Register</a>
+                            <a class="text-secondary mb-2" href="/sellerlanding"><i class="fa fa-angle-right mr-2"></i>Sign In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

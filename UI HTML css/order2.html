@@ -108,7 +108,6 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Inventory</a>
                             <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
                                 <a href="cart.html" class="dropdown-item">Cart</a>
-                                <a href="checkout.html" class="dropdown-item">Checkout</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link active">Orders</a>
@@ -165,23 +164,20 @@
 
     <!-- Checkout Start -->
     <div class="container-fluid">
+        <form action="/orderplace" method="post">
         <div class="row px-xl-5">
             <div class="col-lg-8">
                 <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Billing Address</span></h5>
                 <div class="bg-light p-30 mb-5">
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <label>First Name</label>
+                            <label>Your Name</label>
                             <input class="form-control" type="text" placeholder=" ">
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label>Last Name</label>
-                            <input class="form-control" type="text" placeholder=" ">
-                        </div>
-                        <div class="col-md-6 form-group">
+                        <!-- <div class="col-md-6 form-group">
                             <label>E-mail</label>
                             <input class="form-control" type="text" placeholder="example@email.com">
-                        </div>
+                        </div> -->
                         <div class="col-md-6 form-group">
                             <label>Mobile No</label>
                             <input class="form-control" type="text" placeholder="+123 456 789">
@@ -189,20 +185,6 @@
                         <div class="col-md-6 form-group">
                             <label>Shipping Address</label>
                             <input class="form-control" type="text" placeholder="123 Street">
-                        </div>
-                        <!-- <div class="col-md-6 form-group">
-                            <label>Address Line 2</label>
-                            <input class="form-control" type="text" placeholder="123 Street">
-                        </div> -->
-                        <div class="col-md-6 form-group">
-                            <!-- <label>Country</label>
-                            <select class="custom-select">
-                                <option selected>India</option>
-                                <option>Pune</option>
-                                <option>Mumbai</option>   
-                            </select> -->
-                                <label>Country</label>
-                                <input class="form-control" type="text" placeholder="Country">
                         </div>
                         <div class="col-md-6 form-group">
                             <label>City</label>
@@ -215,59 +197,6 @@
                         <div class="col-md-6 form-group">
                             <label>PIN Code</label>
                             <input class="form-control" type="text" placeholder="123">
-                        </div>
-                        <div class="col-md-12 form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="newaccount">
-                                <label class="custom-control-label" for="newaccount">Create an account</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse mb-5" id="shipping-address">
-                    <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Shipping Address</span></h5>
-                    <div class="bg-light p-30">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <label>First Name</label>
-                                <input class="form-control" type="text" placeholder="John">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label>Last Name</label>
-                                <input class="form-control" type="text" placeholder="Doe">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label>E-mail</label>
-                                <input class="form-control" type="text" placeholder="example@email.com">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label>Mobile No</label>
-                                <input class="form-control" type="text" placeholder="+123 456 789">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label>Address Line 1</label>
-                                <input class="form-control" type="text" placeholder="123 Street">
-                            </div>
-                            <!-- <div class="col-md-6 form-group">
-                                <label>Country</label>
-                                <select class="custom-select">
-                                <option selected>Maharashtra</option>
-                                <option>Pune</option>
-                                <option>Mumbai</option>
-                                </select>
-                            </div> -->
-                            <div class="col-md-6 form-group">
-                                <label>City</label>
-                                <input class="form-control" type="text" placeholder="India">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label>State</label>
-                                <input class="form-control" type="text" placeholder="Indiak">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label>PIN Code</label>
-                                <input class="form-control" type="text" placeholder="123">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -333,6 +262,7 @@
                 </div>
             </div>
         </div>
+    </form>
     </div>
     <!-- Checkout End -->
 
